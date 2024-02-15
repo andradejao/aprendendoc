@@ -12,4 +12,6 @@ int main(){
     else{
         printf("O número digitado é impar \n");
     }
+    
+return 0;
 }

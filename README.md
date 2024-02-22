@@ -279,3 +279,153 @@ int main(){
 return 0;
     }
 ```
+
+#### While Bin-Dec
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int bin[6] = {1, 0, 1, 1, 1, 0};
+    int rs = 0;
+    int pos = 0;
+    int exp = 5;
+
+    while (pos <= 5)
+    {
+        rs += bin[pos] * (pow(2, exp));
+        pos++;
+        exp--;
+    }
+    printf("%d \n", rs);
+    return 0;
+
+    return 0;
+}
+```
+
+#### Coleções Iguais 
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int c1[10] = {10, 5, 68, 8, 47, 12, 54, 13, 62, 11};
+    int c2[15] = {11, 5, 62, 112, 84, 76, 12, 55, 59, 85, 13, 0, 14, 19, 18};
+    int i, j;
+
+    for (i = 0; i < 10; i++)
+    {
+        for (j = 0; j < 15; j++)
+        {
+            if (c1[i] == c2[j])
+            {
+                printf("%d é idêntico em ambas as coleções \n", c2[j]);
+            }
+        }
+    }
+
+    return 0;
+}
+
+```
+
+#### Coleção 1
+
+```c
+// Array é um conjunto de dados sobre um determinado assunto. Pode-se utilizar valores numéricos, textos, datas ou objetos.
+
+#include <stdio.h>
+
+int main()
+{
+    int valores[5] = {10, 5, 8, 12, 7};
+    printf("%d \n", valores[0]);
+
+    return 0;
+}
+```
+
+#### Coleção 2
+ ```c
+ #include <stdio.h>
+
+int main()
+{
+
+    int loud[10] = {1, 21, 11, 8, 19, 45, 7, 24, 26, 18};
+    int soma = 0, media = 0, i;
+
+    for (i = 0; i <= 9; i++)
+    {
+        soma += loud[i];
+    }
+    printf("O resultado da soma é: %d \n", soma);
+
+    for (i = 0; i < 10; i++)
+    {
+        media += loud[i];
+    }
+    printf("O resultado da média é: %d \n", (media / 10));
+
+    for (i = 0; i < 10; i++)
+    {
+        if (loud[i] % 2 == 0)
+        {
+            printf("O número %d é par \n", loud[i]);
+        }
+    }
+
+    return 0;
+}
+ ```
+
+ #### Base Expoente 
+
+ ```c
+ #include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int bas, exp, i, b;
+    printf("Digite um número para definir a base da potência: \n");
+    scanf("%d", &bas);
+
+    printf("Digite um número para definir o expoente: \n");
+    scanf("%d", &exp);
+
+    b = bas;
+
+    for (i = 1; i < exp; i++)
+    {
+        // bas *= b
+        bas = bas * b;
+    }
+    printf("%d", bas);
+
+    return 0;
+}
+ ```
+
+ #### For 1
+
+ ```c
+ #include <stdio.h>
+
+int main()
+{
+    int x;
+    for (x = 1; x <= 10; x++)
+    {
+        printf("%d \n", x);
+    }
+
+    return 0;
+}
+ ```
+
+ 
